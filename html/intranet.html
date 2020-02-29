@@ -53,6 +53,7 @@
         </div>
     </nav>
 </header>
+
 <style type="text/css">
     .bd-placeholder-img {
         font-size: 1.125rem;
@@ -87,7 +88,7 @@
             <a href="portfolio_pro.html">Portfolio Pro</a>
         </li>
         <li class="breadcrumb-item active">
-            antivirus
+            interface web interne
         </li>
     </ol>
 
@@ -97,8 +98,8 @@
         <div class="col-lg-8">
 
             <!-- Preview Image -->
-            <div class="div-Wynd">
-                <img class="picture" style="height: 300px;" src="../images/security.png" alt="">
+            <div class="" style="height: 300px;">
+                <img class="picture" src="../images/intranet.jpg" alt="">
             </div>
 
             <hr>
@@ -108,41 +109,61 @@
                 Contexte
             </h1>
             <p>
-                Aucun antivirus n’était alors présent dans le parc informatique,
-                le RSSI à alors décidé d’installer un antivirus global au parc informatique
-                qui avait de très bons avis au sein du milieu professionnel.
+                Un annuaire d’authentification LDAP est utilisé au sein de l’entreprise pour des services interne à celle-ci.
+                L’authentification au wifi se faisait en revanche toujours pas un mot de passe. Aucune plateforme centralisant tous les services de
+                l’entreprise n’existait alors.
             </p>
+
+            <h1>
+                Objectif
+            </h1>
+            <p>
+                L’objectif était de créer une interface web accessible via les identifiants et mots de passe LDAP de chaque collaborateurs
+                de l’entreprise, modifier leur mot de passe ce qui leur permettrait par la suite après une mise en place du serveur radius et du switch comprenant
+                les différents Vlan, de s’authentifié au réseau wifi interne via leurs identifiants LDAP.
+                Il s’est avéré par la suite que beaucoup de processus pouvait être amélioré graçe à la création de cette interface au sein de l’entrerpise :
+            </p>
+
+            <ol>
+                <li>
+                    centralisation des procédures d’arrivé et de départ des collaborateurs
+                    (création de compte, ajout à certain groupes…) fait via un espace administrateur au sein de ce site
+                </li>
+                <li>
+                    unification des mots de passe collaborateurs
+                </li>
+                <li>
+                    création des voucher permettant la connexion au réseau interne pour les invités.
+                </li>
+            </ol>
 
             <h1>
                 Réalisation
             </h1>
             <p>
-                Nous avons tout d’abord du installer un SQL Server sur notre machine afin de pouvoir administrer l’ensemble des clés antivirus mais aussi de faire du déploiement à distance de l’antivirus une fois que l’agent serait installé. Une problématique d’environnement c’est très rapidement posé car nous avions des machines avec des systèmes d’exploitation différents(Linux, Windows 10 et Mac OS).
-                Des tests d’installation ont donc suivi, ceux-ci se sont avéré concluant, on suivi des tests d’utilisation pour voir si l’antivirus n’handicapé pas les Ordinateurs client.
-                Nous avons rencontré ici un problème de taille, les filtres interdisant certains type de sites bloquaient des URL nécessaire à la veille technologique de certains collaborateurs mais aussi leur travail.
-                La solution choisit a donc était d’installer l’antivirus sur une machine dans chacun des services pour pouvoir débloquer chaque site par son URL au fur et à mesure sans handicaper l’ensemble du parc informatique mais seulement quelques beta testeurs volontaires.
-                Les beta testeurs nous faisaient parvenir les site sous forme de ticket sur la plateforme zendesk.
+                Le choix de réaliser cette interface web à l’aide du Framework Symfony 4 a été fait assez vite pour un soucis de sécurité et de norme(MVC) notamment. Pour travailler j’ai du reproduire la forme de l’annuaire LDAP présent sur le serveur en production afin de ne pas l’altérer par mes différents tests. J’ai donc mit en place une
+                VM centos 7 de même version que le serveur de production, puis j’y ai installé l’annuaire LDAP avec les mêmes configurations que celui de l’entreprise.
             </p>
             <p>
-                Pour le déploiement il m’a fallu écrire des scripts pour Ubuntu et Mac OS afin de pouvoir installé les Agents sans avoir besoin de faire de manipulation, une seule commande suffisait, Un README a été écrit pour cela.
-                Il a fallu ici aussi testé les scripts sur des machine Ubuntu de versions différentes pour vérifier la compatibilité. La procédure a été identique pour les MAC.
+                Au fur et à mesure un problème de sécurité est ressorti, il a donc était décidé de mettre un système pour contrer le brutforce en place à l’aide d’un serveur Redis pour protéger le site web. Toute la configuration du nombre d’essais pour être ban et du temp de bannissement est configurable via les fichiers de configuration.
+                Par la suite j’ai du travailler avec des API pour administrer les différents compte slack, Gmail. J’ai donc réalisé plusieurs scripts en python pour Gmail via l’api Admin Gsuite SDK.
             </p>
             <p>
-                Nous avions décidé qu’ont pourrait décrété la fin des tests avec ces béta testeurs quand on ne débloquerais plus d’URL pendant deux semaines.
-                Nous avons par la suite rajouté l’antivirus sur de plus en plus de machines jusqu’à l’entièreté du parc informatique.
+                Il m’a aussi fallu utilisé l’API pour communiqué avec le controller des différentes bornes wifi, cela m’a permit de mettre en place un formulaire au sein du site web pour créer des voucher invité avec temps d’expiration et nombres d’utilisation définit par les informations du formulaire.
             </p>
+
 
             <h1>
                 Outils utilisés
             </h1>
             <p>
-                J’ai utilisé pour ce projet VIM pour écrire les scripts, Git pour le versioning et plus particulièrement le Gitlab interne à l’entreprise.
+                J’ai utilisé pour ce projet PhpStorm comme IDE, Git pour le versioning et plus particulièrement le Gitlab interne à l’entreprise.
             </p>
             <p>
-                Langage utilisés : Bash
+                Langage utilisés : HTML, CSS, Javascript, Symfony 4, Python.
             </p>
             <p>
-                Base de donnée : SqlServeur
+                Base de donnée : Sqlite.
             </p>
 
 
@@ -165,10 +186,10 @@
                         <div class="col-lg-12">
                             <ul class="list-unstyled mb-0">
                                 <li>
-                                    <a href="#">administration système</a>
+                                    <a href="#">Developpement Web</a>
                                 </li>
                                 <li>
-                                    <a href="#">Developpement système</a>
+                                    <a href="#">API</a>
                                 </li>
                             </ul>
                         </div>
@@ -213,6 +234,4 @@
 
 </body>
 
-
-<!-- Mirrored from yassandco.fr/Epreuve/idE6/4 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 30 Mar 2019 09:45:00 GMT -->
 </html>
