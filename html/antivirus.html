@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Carousel Template · Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/carousel/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/carousel.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Machavoine Remy</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Présentation
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+
+                        <a class="dropdown-item" href="moi.html">Qui suis-je?</a>
+                        <a class="dropdown-item" href="wynd.html">l'Entreprise</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#ecole"><b>Portfolio école</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio_pro.html"><b>Portfolio pro</b></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#veille" ><b>Veille</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacter"><b>Contact</b></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<style type="text/css">
+    .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .p-veille{
+        text-align: justify;
+    }
+
+    @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+        }
+    }
+</style>
+
+<div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">Mise en place d’un Antivirus au sein du parc informatique
+    </h1>
+
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="accueil.html">Accueil</a>
+        </li>
+        <li class="breadcrumb-item active">installation d'antivirus</li>
+    </ol>
+
+    <div class="row">
+
+        <!-- Post Content Column -->
+        <div class="col-lg-8">
+
+            <!-- Preview Image -->
+            <img src="../images/security.png" alt=""class=w100>
+
+            <hr>
+
+            <!-- Post Content -->
+            <h1>
+                Contexte
+            </h1>
+            <p>
+                Aucun antivirus n’était alors présent dans le parc informatique,
+                le RSSI à alors décidé d’installer un antivirus global au parc informatique
+                qui avait de très bons avis au sein du milieu professionnel.
+            </p>
+
+            <h1>
+                Réalisation
+            </h1>
+            <p>
+                Nous avons tout d’abord du installer un SQL Server sur notre machine afin de pouvoir administrer l’ensemble des clés antivirus mais aussi de faire du déploiement à distance de l’antivirus une fois que l’agent serait installé. Une problématique d’environnement c’est très rapidement posé car nous avions des machines avec des systèmes d’exploitation différents(Linux, Windows 10 et Mac OS).
+                Des tests d’installation ont donc suivi, ceux-ci se sont avéré concluant, on suivi des tests d’utilisation pour voir si l’antivirus n’handicapé pas les Ordinateurs client.
+                Nous avons rencontré ici un problème de taille, les filtres interdisant certains type de sites bloquaient des URL nécessaire à la veille technologique de certains collaborateurs mais aussi leur travail.
+                La solution choisit a donc était d’installer l’antivirus sur une machine dans chacun des services pour pouvoir débloquer chaque site par son URL au fur et à mesure sans handicaper l’ensemble du parc informatique mais seulement quelques beta testeurs volontaires.
+                Les beta testeurs nous faisaient parvenir les site sous forme de ticket sur la plateforme zendesk.
+            </p>
+            <p>
+                Pour le déploiement il m’a fallu écrire des scripts pour Ubuntu et Mac OS afin de pouvoir installé les Agents sans avoir besoin de faire de manipulation, une seule commande suffisait, Un README a été écrit pour cela.
+                Il a fallu ici aussi testé les scripts sur des machine Ubuntu de versions différentes pour vérifier la compatibilité. La procédure a été identique pour les MAC.
+            </p>
+            <p>
+                Nous avions décidé qu’ont pourrait décrété la fin des tests avec ces béta testeurs quand on ne débloquerais plus d’URL pendant deux semaines.
+                Nous avons par la suite rajouté l’antivirus sur de plus en plus de machines jusqu’à l’entièreté du parc informatique.
+            </p>
+
+            <h1>
+                Outils utilisés
+            </h1>
+            <p>
+                J’ai utilisé pour ce projet VIM pour écrire les scripts, Git pour le versioning et plus particulièrement le Gitlab interne à l’entreprise.
+            </p>
+            <p>
+                Langage utilisés : Bash
+            </p>
+            <p>
+                Base de donnée : SqlServeur
+            </p>
+
+
+            <hr>
+
+
+        </div>
+
+        <!-- Sidebar Widgets Column -->
+        <div class="col-md-4">
+
+            <!-- Search Widget -->
+
+
+            <!-- Categories Widget -->
+            <div class="card my-4">
+                <h5 class="card-header">Categories</h5>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="#">administration système</a>
+                                </li>
+                                <li>
+                                    <a href="#">Developpement système</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Side Widget -->
+        </div>
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <p class="m-0 text-center text-white"><img src="../../assets/images/logo.ico" alt="Logo"class=w100> </p>
+                <br>
+                <p align="center"><a class="text-white" href="../../Accueil/ml.html">Mentions légales -  2019</a></p>
+            </div>
+            <div class="col-md-4">
+                <!-- <h3>Lien rapides</h3>
+                <ul>
+                    <li><a href="">test</a></li>
+                    <li><a href="">test</a></li>
+                    <li><a href="">test</a></li>
+                    <li><a href="">test</a></li>
+                </ul> -->
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+    <!-- /.container -->
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+
+
+<!-- Mirrored from yassandco.fr/Epreuve/idE6/4 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 30 Mar 2019 09:45:00 GMT -->
+</html>
