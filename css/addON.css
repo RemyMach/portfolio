@@ -18,3 +18,13 @@
 body {
     padding-bottom: 0px;
 }
+
+.image-accueil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.enfant {
+    margin: 0;
+}

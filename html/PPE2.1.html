@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Carousel Template · Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/carousel/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/carousel.css" rel="stylesheet">
+    <link href="../css/addON.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="moi.html">Machavoine Remy</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Présentation
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+
+                        <a class="dropdown-item" href="moi.html">Qui suis-je?</a>
+                        <a class="dropdown-item" href="wynd.html">l'Entreprise</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#ecole"><b>Portfolio école</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio_pro.html"><b>Portfolio pro</b></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#veille" ><b>Veille</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacter"><b>Contact</b></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<style type="text/css">
+    .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .p-veille{
+        text-align: justify;
+    }
+
+    @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+        }
+    }
+</style>
+
+<div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">Création du site web Biotourist
+    </h1>
+
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="accueil.html">Accueil</a>
+        </li>
+
+        <li class="breadcrumb-item active">
+            PPE 2.1
+        </li>
+    </ol>
+
+    <div class="row">
+
+        <!-- Post Content Column -->
+        <div class="col-lg-8">
+
+            <!-- Preview Image -->
+            <div class="">
+                <img class="picture" style="height: 300px;" src="../images/salade.jpg" alt="">
+            </div>
+
+            <hr>
+
+            <!-- Post Content -->
+            <h1>
+                Contexte
+            </h1>
+            <p>
+                Le site a pour but de mettre en relation un vendeur de produit bio ou non qui n’est
+                pas un professionnel et un acheteur pour ce produit qui se servirait de la géolocalisation et d’une map afin de trouver le meilleur vendeur
+                au plus proche de sa position. Un système d’utilisateur Contrôleur qui aurait en échange de ses contrôles chez les vendeurs des réduction lors
+                de ses achats contrôlerait la qualité des vendeurs mais aussi des produits pour les certifier bio ou non. Un système de commentaire serait mis en place,
+                ainsi qu’un système de message et de report. Le système de paiement se ferait exclusivement via le site web.
+            </p>
+            <p>
+                En groupe, nous devions créer un site web avec le langage PHP en nous aidant du framework Laravel dans un style de programmation MVC.
+                La partie back-end devait être une API écrite via le framework Laravel. La partie base de données serait un SGBD MySQL. Nous devions aussi concevoir
+                un mini cahier des charges préalablement afin de dresser les différents besoin. La partie front-end nous était laissé au choix.
+
+            </p>
+
+            <h1>
+                Réalisation
+            </h1>
+            <p>
+                Dans un premier temps Nous avons fait le choix de réalisé le cahier des charges afin d’y voir plus clair à travers les différentes contraintes du projets.
+                Nous avons par la suite, en groupe décidé de réalisé la base de données qui se fait en Laravel via des fichiers de Migration. Nous avons alors utilisé la méthode Merise afin
+                de dresser nos différents tables et les relations qui les lient entre elles.  Nous avons décidé d’utiliser github pour le versionning et blade pour le front qui est l’outil de template de Laravel
+                S’en est suivi alors la répartition des fonctionnalités, les fonctionnalités que j’ai eu à gérer ont été les suivantes :
+            </p>
+            <ol>
+                <li>
+                    Gestion des utilisateurs
+                </li>
+                <li>
+                    Gestion de la sécurité (qui a accès à quel ressource)
+                </li>
+                <li>
+                    Conception d’une grande partie de l’API
+                </li>
+                <li>
+                    Mise en place du mailing pour certaines fonctionnalités
+                </li>
+            </ol>
+            <p>
+                J’ai donc conçu la gestion des utilisateurs sur l’api vi un token d’authentification et un username(email) qui me permettait donc d’authentifié l’utilisateur via cette paire token email.
+            </p>
+            <p>
+                La gestion de la sécurité c’est fait avec un grand nombre de middleware en fonction du statut de connexion des utilisateurs dans la session. Un traitement est fait à chacune de leur requête http
+                qui le nécessite afin de voir si oui ou non ils peuvent avoir accès à la page ou information demandée. Si ce n’est pas le cas une redirection de l’utilisateur sur une autre route est alors effectué.
+            </p>
+            <p>
+                La partie API fut une partie très intéressant car il a fallu que je me documente pour réaliser tout la partie Modèle dans l’ API ainsi que la partie Controller afin que le site web n’est qu’à gérer les vues
+                et les redirection entre les pages si nécessaire. Toutes les requêtes si elles ont besoin d’un contrôle doivent être envoyé à l’API via le protocole http, la requête et les informations qu’elle contenait doivent être récupéré,
+                traité puis un JSON est renvoyé au site web avec un statut 400 et des messages d’erreur si quelque chose ne va pas et un statut 200 si au contraire c’est un succès.
+            </p>
+            <p>
+                La mise en place du mailing a été fait via le framework Laravel ainsi que le fichier d’environnement .env dans lequel l’adresse du serveur smtp est renseigné. Ce smtp permet de rediriger les mails vers le destinataire.
+                Dans notre cas nous avons utilisé la sandbox de mailtrap.io afin de pouvoir voir tous les mails envoyé et reçus comme si ceux-ci était vraiment envoyé. Un service a été fait afin d’y faire appel pour envoyé des mail via des templates blade.
+            </p>
+            <p>
+                Pour finir j’ai fait de l’intégration sur le front-end de certaines fonctionnalité  comme le changement de statut utilisateurs, l’ajout de nouveaux statuts utilisateur, la gestion administrateur minimal des report et contacts.
+                Pour Conclure toute les contraintes ont été remplis et le site était fonctionnel
+            </p>
+            <p>
+                La première étape a été la conception de la base de donnée via phpMyAdmin en rentrant toutes les données des produits via l’interface puis la liaison avec la base de donnée et le site.
+            </p>
+            <p>
+                Une fois la liaison établit tout l’affichage du site a été réalisé grossièrement. Les fonctionnalités d’authentification, de gestion de panier et de paiement via paypal ont ensuite été intégré au site.
+            </p>
+            <p>
+                Il me restait alors une semaine, j’ai donc décidé de réalisé l’affichage de panier avec AJAX pour la gestion de quantité, et j’ai réutilisé l’AJAX pour la séléction des produits avec leur prix et leur quantité. Il ne m’a alors pas resté beaucoup de temps pour améliorer le front du site.
+                Pour Conclure toute les contraintes ont été remplis et le site était fonctionnel.
+            </p>
+
+
+            <h1>
+                Outils utilisés
+            </h1>
+            <p>
+                J’ai utilisé pour ce projet PhpStorm pour l’IDE.
+            </p>
+            <p>
+                Framework utilisé : Laravel
+            </p>
+            <p>
+                Langage utilisés : PHP, HTML, CSS, Javascript
+            </p>
+            <p>
+                Base de donnée : Mysql.
+            </p>
+            <p>
+                Versionning : Github
+            </p>
+            <p>
+                Environnement : hébergement sur un linux(Ubuntu)
+            </p>
+            <hr>
+
+
+        </div>
+
+        <!-- Sidebar Widgets Column -->
+        <div class="col-md-4">
+
+            <!-- Search Widget -->
+
+
+            <!-- Categories Widget -->
+            <div class="card my-4">
+                <h5 class="card-header">Categories</h5>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="#">Développement web</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Side Widget -->
+        </div>
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+
+<!-- footer -->
+<footer class="py-5">
+    <div class="container">
+        <div class="row">
+            <span class="offset-sm-5 col-sm-1">
+                <a href="http://www.linkedin.com/in/rémy-machavoine"><img style="width: 48px" src="../images/linkedin.png"></a>
+            </span>
+            <span class="col-sm-1">
+                <a href="www.linkedin.com/in/rémy-machavoine"><img style="width: 48px" src="../images/github.png"></a>
+            </span>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Bootstrap core JavaScript -->
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+
+
+<!-- Mirrored from yassandco.fr/Epreuve/idE6/4 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 30 Mar 2019 09:45:00 GMT -->
+</html>

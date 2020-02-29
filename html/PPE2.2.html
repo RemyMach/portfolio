@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Carousel Template · Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/carousel/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/carousel.css" rel="stylesheet">
+    <link href="../css/addON.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="moi.html">Machavoine Remy</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Présentation
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+
+                        <a class="dropdown-item" href="moi.html">Qui suis-je?</a>
+                        <a class="dropdown-item" href="wynd.html">l'Entreprise</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#ecole"><b>Portfolio école</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio_pro.html"><b>Portfolio pro</b></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#veille" ><b>Veille</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacter"><b>Contact</b></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<style type="text/css">
+    .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .p-veille{
+        text-align: justify;
+    }
+
+    @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+        }
+    }
+</style>
+
+<div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">Création du site web Biotourist sur l'application téléphone
+    </h1>
+
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="accueil.html">Accueil</a>
+        </li>
+
+        <li class="breadcrumb-item active">
+            PPE 2.2
+        </li>
+    </ol>
+
+    <div class="row">
+
+        <!-- Post Content Column -->
+        <div class="col-lg-8">
+
+            <!-- Preview Image -->
+            <div class="">
+                <img class="picture" style="height: 300px;" src="../images/carrote.jpg" alt="">
+            </div>
+
+            <hr>
+
+            <!-- Post Content -->
+            <h1>
+                Contexte
+            </h1>
+            <p>
+                Création de l'application téléphone du site web 2.1 sur tous types de téléphones.
+                Cette application devait s'appuyer sur l'API déja fait pour le PPE2.1 et communiquer avec la même base de donnée que celle-ci
+                afin que les utilisateurs puissent utiliser leur compte sur l'application téléphone et sur le site web.
+            </p>
+            <p>
+                En groupe, nous devions décider de la technologies que nous allions utiliser. Notrre choix c'est vite tourner vers le react-native qui semblait être
+                une technologies intéressante, demandé dans le milieu professionnel et qui nous permettait de faire du cross-platform.
+
+            </p>
+
+            <h1>
+                Réalisation
+            </h1>
+            <p>
+                Le plus gros du travail de back-end était déjà fait graçe à l'API
+                réalisé précédemment dans le projet 2.1. Le plus gros problème était le temps qu'il nous restait
+                afin de réaliser l'application sachant que nous n'avions jamais utilsé la librairie react-native.
+                Nous avons donc fait le choix de concevoir les fonctionnalités essentiel à l'application.
+                Nous nous sommes réparties les fonctionnalités, pour ma part j'ai eu:
+            </p>
+            <ol>
+                <li>
+                    l'initialisation du projet
+                </li>
+                <li>
+                    Gestion de la navigation entre les différentes vues
+                </li>
+                <li>
+                    Gestion des utilisateurs
+                </li>
+                <li>
+                    Integration de la gestion profil et des messages
+                </li>
+            </ol>
+            <p>
+                J'ai du commencer par me former à cette technologie et j'ai choisi de le faire via le cours openclassroom
+                <a href="https://openclassrooms.com/fr/courses/4902061-developpez-une-application-mobile-react-native">Développez une application mobile ReactNative</a>
+                Par la suite j'ai donc télécharger le projet initialiser le dépot sur Git et fait mes premier push pour start l'application
+            </p>
+            <p>
+                Pour la navigation j'en suis très vite venue à l'utilisation de la librairie react-navigation qui me permettait de gérer toute la navigation dans un fichier en ajoutant même quelques animations
+            </p>
+            <p>
+                Les utilisateurs ont été géré via la librairie asyncstorage qui permet d'enregistrè les utilisateurs renvoyé après la connexion dans la session du téléphone.
+                Celui-ci garde donc en mémoire l'utilisateur
+                jusqu'à ça connexion ainsi que son statut dans lequel celui-ci c'est connecté.
+            </p>
+            <p>
+                L'intégration du profil et de la gestion des messages c'est fait directement dans l'onglet profil. L'utilisateur peut voir toutes ses conversations et envoyer des messages. Il peut aussi modifié ses informations et son mot de passe.
+            </p>
+            <h1>
+                Outils utilisés
+            </h1>
+            <p>
+                J’ai utilisé pour ce projet PhpStorm pour l’IDE.
+            </p>
+            <p>
+                Librairie utilisé : Laravel
+            </p>
+            <p>
+                Langage utilisés : CSS, Javascript
+            </p>
+            <p>
+                Base de donnée : Mysql
+            </p>
+            <p>
+                Versionning : Github
+            </p>
+            <p>
+                Environnement : hébergement sur téléphone.
+            </p>
+            <hr>
+
+
+        </div>
+
+        <!-- Sidebar Widgets Column -->
+        <div class="col-md-4">
+
+            <!-- Search Widget -->
+
+
+            <!-- Categories Widget -->
+            <div class="card my-4">
+                <h5 class="card-header">Categories</h5>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="#">Développement mobile</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Side Widget -->
+        </div>
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+
+<!-- footer -->
+<footer class="py-5">
+    <div class="container">
+        <div class="row">
+            <span class="offset-sm-5 col-sm-1">
+                <a href="http://www.linkedin.com/in/rémy-machavoine"><img style="width: 48px" src="../images/linkedin.png"></a>
+            </span>
+            <span class="col-sm-1">
+                <a href="www.linkedin.com/in/rémy-machavoine"><img style="width: 48px" src="../images/github.png"></a>
+            </span>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Bootstrap core JavaScript -->
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+
+
+<!-- Mirrored from yassandco.fr/Epreuve/idE6/4 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 30 Mar 2019 09:45:00 GMT -->
+</html>
