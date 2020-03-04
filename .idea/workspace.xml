@@ -8,9 +8,9 @@
       <change beforePath="$PROJECT_DIR$/html/PPE1.3.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/PPE1.3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/PPE2.1.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/PPE2.1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/PPE2.2.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/PPE2.2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/accueil.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/antivirus.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/antivirus.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/bootstrap_description.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/bootstrap_description.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/installation-machine.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/installation-machine.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/intranet.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/intranet.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/moi.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/moi.html" afterDir="false" />
@@ -42,11 +42,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/images" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/" />
+      <recent name="$PROJECT_DIR$/useless" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/images" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/useless" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -72,7 +73,8 @@
       <option name="presentableId" value="Default" />
       <updated>1578756199603</updated>
       <workItem from="1578756200898" duration="1759000" />
-      <workItem from="1582975291165" duration="25781000" />
+      <workItem from="1582975291165" duration="26976000" />
+      <workItem from="1583347196259" duration="198000" />
     </task>
     <servers />
   </component>
@@ -84,7 +86,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
