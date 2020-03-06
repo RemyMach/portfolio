@@ -2,23 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="133d9ba4-dc00-4703-86c3-79ca38bf8d09" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/html/gestion_stocks_incidents.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/PPE1.1.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/PPE1.1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/PPE1.2.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/PPE1.2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/PPE1.3.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/PPE1.3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/PPE2.1.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/PPE2.1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/PPE2.2.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/PPE2.2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/antivirus.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/antivirus.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/bootstrap_description.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/bootstrap_description.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/installation-machine.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/installation-machine.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/intranet.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/intranet.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/moi.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/moi.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/php_description.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/php_description.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/portfolio_ecole.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/portfolio_ecole.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/portfolio_pro.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/portfolio_pro.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/symfony_description.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/symfony_description.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/wynd.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/wynd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +65,8 @@
       <updated>1578756199603</updated>
       <workItem from="1578756200898" duration="1759000" />
       <workItem from="1582975291165" duration="26976000" />
-      <workItem from="1583347196259" duration="198000" />
+      <workItem from="1583347196259" duration="1520000" />
+      <workItem from="1583402613434" duration="14280000" />
     </task>
     <servers />
   </component>
