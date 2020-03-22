@@ -2,23 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="133d9ba4-dc00-4703-86c3-79ca38bf8d09" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/html/IA.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/artificial-intelligence.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/brain.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/PPE1.1.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/PPE1.1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/PPE1.2.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/PPE1.2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/PPE1.3.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/PPE1.3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/PPE2.1.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/PPE2.1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/PPE2.2.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/PPE2.2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/antivirus.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/antivirus.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/bootstrap_description.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/bootstrap_description.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/gestion_stocks_incidents.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/gestion_stocks_incidents.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/installation-machine.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/installation-machine.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/intranet.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/intranet.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/moi.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/moi.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/php_description.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/php_description.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/portfolio_ecole.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/portfolio_ecole.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/portfolio_pro.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/portfolio_pro.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/wynd.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/wynd.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
@@ -81,7 +67,7 @@
       <workItem from="1583402613434" duration="14280000" />
       <workItem from="1583919150583" duration="3279000" />
       <workItem from="1584046258032" duration="19000" />
-      <workItem from="1584892810971" duration="6589000" />
+      <workItem from="1584892810971" duration="10157000" />
     </task>
     <servers />
   </component>

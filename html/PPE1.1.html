@@ -107,84 +107,62 @@
                 Contexte
             </h1>
             <p>
-                Le site a pour but de mettre en relation un vendeur de produit bio ou non qui n’est
-                pas un professionnel et un acheteur pour ce produit qui se servirait de la géolocalisation et d’une map afin de trouver le meilleur vendeur
-                au plus proche de sa position. Un système d’utilisateur Contrôleur qui aurait en échange de ses contrôles chez les vendeurs des réduction lors
-                de ses achats contrôlerait la qualité des vendeurs mais aussi des produits pour les certifier bio ou non. Un système de commentaire serait mis en place,
-                ainsi qu’un système de message et de report. Le système de paiement se ferait exclusivement via le site web.
-            </p>
-            <p>
-                En groupe, nous devions créer un site web avec le langage PHP en nous aidant du framework Laravel dans un style de programmation MVC.
-                La partie back-end devait être une API écrite via le framework Laravel. La partie base de données serait un SGBD MySQL. Nous devions aussi concevoir
-                un mini cahier des charges préalablement afin de dresser les différents besoin. La partie front-end nous était laissé au choix.
-
+                La M2L (maison des ligues de Lorraine), établissement du conseil régional de Lorraine, est responsable de la gestion du service
+                des sports et en particulier des ligues sportives ainsi que d'autres structures hébergées.
+                Le M2l a décidé de faire un appel d'offre portant sur le renouvellement de son matériel informatique, télécoms et de stockage. Le PPE visait à répondre à cet appel d'offre de la meilleur des manières.
             </p>
 
             <h1>
                 Réalisation
             </h1>
             <p>
-                Dans un premier temps Nous avons fait le choix de réalisé le cahier des charges afin d’y voir plus clair à travers les différentes contraintes du projets.
-                Nous avons par la suite, en groupe décidé de réalisé la base de données qui se fait en Laravel via des fichiers de Migration. Nous avons alors utilisé la méthode Merise afin
-                de dresser nos différents tables et les relations qui les lient entre elles.  Nous avons décidé d’utiliser github pour le versionning et blade pour le front qui est l’outil de template de Laravel
-                S’en est suivi alors la répartition des fonctionnalités, les fonctionnalités que j’ai eu à gérer ont été les suivantes :
+                Le PPE se séparait en deux parties:
             </p>
             <ol>
                 <li>
-                    Gestion des utilisateurs
+                    renouvellement du matériel informatique et télécoms
                 </li>
                 <li>
-                    Gestion de la sécurité (qui a accès à quel ressource)
-                </li>
-                <li>
-                    Conception d’une grande partie de l’API
-                </li>
-                <li>
-                    Mise en place du mailing pour certaines fonctionnalités
+                    renouvelement de tout le système de stockage de la M2L, NAS, DAS , SAN...
                 </li>
             </ol>
             <p>
-                J’ai donc conçu la gestion des utilisateurs sur l’api vi un token d’authentification et un username(email) qui me permettait donc d’authentifié l’utilisateur via cette paire token email.
+                Ce PPE fut les pour les deux parties réalisé en groupe de 4 personnes, les tâches ont très vite était divisés et nous nous sommes échangé à tour de rôle le
+                poste de chef de projet afin de mener à bien cet appel d'offre.
             </p>
             <p>
-                La gestion de la sécurité c’est fait avec un grand nombre de middleware en fonction du statut de connexion des utilisateurs dans la session. Un traitement est fait à chacune de leur requête http
-                qui le nécessite afin de voir si oui ou non ils peuvent avoir accès à la page ou information demandée. Si ce n’est pas le cas une redirection de l’utilisateur sur une autre route est alors effectué.
+                Nous en sommes très vite venu à découper les tâches pour la première partie du projet:
             </p>
+            <ol>
+                <li>
+                    Chef de projet sur le début du PPE, organisation des tâches, mise en place d'un dossier drive commun pour partagé le travail, mise en place d'un groupe discord pour améliorer la communication au sein du groupe
+                </li>
+                <li>
+                    comparaison et achat des postes nomades en fonction des besoins exprimé par la M2L
+                </li>
+                <li>
+                    Remplacement des concetrateurs déjà en place par des commutateurs
+                </li>
+                <li>
+                    Sélection de l'offre internet la plus adaptée
+                </li>
+            </ol>
             <p>
-                La partie API fut une partie très intéressant car il a fallu que je me documente pour réaliser tout la partie Modèle dans l’ API ainsi que la partie Controller afin que le site web n’est qu’à gérer les vues
-                et les redirection entre les pages si nécessaire. Toutes les requêtes si elles ont besoin d’un contrôle doivent être envoyé à l’API via le protocole http, la requête et les informations qu’elle contenait doivent être récupéré,
-                traité puis un JSON est renvoyé au site web avec un statut 400 et des messages d’erreur si quelque chose ne va pas et un statut 200 si au contraire c’est un succès.
+                Une fois ce projet rendu et approuvé, nous avons alors accompli la deuxième partie de ce PPE.
+                Mes tâches pour ce PPE ont été:
             </p>
+            <ol>
+                <li>
+                    Étude de la solution SAN
+                </li>
+                <li>
+                    Étude de la solution DAS
+                </li>
+            </ol>
             <p>
-                La mise en place du mailing a été fait via le framework Laravel ainsi que le fichier d’environnement .env dans lequel l’adresse du serveur smtp est renseigné. Ce smtp permet de rediriger les mails vers le destinataire.
-                Dans notre cas nous avons utilisé la sandbox de mailtrap.io afin de pouvoir voir tous les mails envoyé et reçus comme si ceux-ci était vraiment envoyé. Un service a été fait afin d’y faire appel pour envoyé des mail via des templates blade.
-            </p>
-            <p>
-                Pour finir j’ai fait de l’intégration sur le front-end de certaines fonctionnalité  comme le changement de statut utilisateurs, l’ajout de nouveaux statuts utilisateur, la gestion administrateur minimal des report et contacts.
-                Pour Conclure toute les contraintes ont été remplis et le site était fonctionnel
-            </p>
-
-
-            <h1>
-                Outils utilisés
-            </h1>
-            <p>
-                J’ai utilisé pour ce projet PhpStorm pour l’IDE.
-            </p>
-            <p>
-                Framework utilisé : Laravel
-            </p>
-            <p>
-                Langage utilisés : PHP, HTML, CSS, Javascript
-            </p>
-            <p>
-                Base de donnée : Mysql.
-            </p>
-            <p>
-                Versionning : Github
-            </p>
-            <p>
-                Environnement : hébergement sur un linux(Ubuntu)
+                Pour cette partie stockage la solution retenue a été le NAS pour répondre à ce besoin de stockage.
+                LDA manquant d'efficacité et le SAN présentant un coût extrême,t important vis à vis de l'architecture de la M2L.
+                La solution Nas présente aussi une grande facilité d'utilisation, tant pour l'administrateur réseau que pour les utilisateurs.
             </p>
             <hr>
 
@@ -205,7 +183,7 @@
                         <div class="col-lg-12">
                             <ul class="list-unstyled mb-0">
                                 <li>
-                                    <a href="#">Développement web</a>
+                                    <a href="#">Infrastructure réseau</a>
                                 </li>
                             </ul>
                         </div>
