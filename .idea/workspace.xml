@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="133d9ba4-dc00-4703-86c3-79ca38bf8d09" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/html/PPE1.1.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/PPE1.1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pdf/cahierChargeBioTourist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,15 +24,16 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pdf" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/" />
       <recent name="$PROJECT_DIR$/useless" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pdf" />
+      <recent name="$PROJECT_DIR$/images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -62,7 +64,8 @@
       <workItem from="1583402613434" duration="14280000" />
       <workItem from="1583919150583" duration="3279000" />
       <workItem from="1584046258032" duration="19000" />
-      <workItem from="1584892810971" duration="10343000" />
+      <workItem from="1584892810971" duration="10659000" />
+      <workItem from="1585840985067" duration="372000" />
     </task>
     <servers />
   </component>
